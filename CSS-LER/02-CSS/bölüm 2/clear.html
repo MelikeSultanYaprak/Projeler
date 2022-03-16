@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clear</title>
+    <style>
+      #container {
+        background-color: blue;
+      }
+      .box {
+        display: block; /*display: inline;*/
+        float: right;
+
+        background-color: aqua;
+        padding: 5px 5px;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="clearfix">
+      <div class="box" id="left">melike</div>
+      <div class="box">sultan</div>
+      <div class="box">yaprak</div>
+      <!--<div style="clear: both"></div>-->
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id quas
+      hic a. Rerum, quasi a. Corrupti ducimus consequatur obcaecati, excepturi
+      est corporis rerum recusandae nesciunt, vel iusto ut facere!
+    </p>
+  </body>
+</html>

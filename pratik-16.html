@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 16 (FEATURES)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@1,300&family=Fredoka:wght@500&family=Homemade+Apple&family=Sansita+Swashed:wght@300;400;800&family=The+Nautigal&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        font-weight: lighter;
+        font-family: "Sofia", sans-serif;
+        font-size: large;
+      }
+      body {
+        margin: 0%;
+      }
+      header {
+        background-color: rgb(253, 185, 219);
+        height: 35px;
+        padding: 8px;
+      }
+      nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 10%);
+      }
+
+      ul {
+        margin: 0%;
+        padding: 0px;
+        list-style: none;
+      }
+
+      li {
+        display: inline-block;
+      }
+      li a {
+        border: 3px solid rgb(238, 27, 133);
+        border-radius: 5px;
+        color: rgb(238, 27, 133);
+      }
+      li a:hover {
+        background-color: hotpink;
+        color: black;
+      }
+      li::before {
+        content: "\1F535";
+      }
+      li::content {
+        color: darkcyan;
+      }
+      .main-a {
+        border: 3px solid rgb(238, 27, 133);
+        border-radius: 5px;
+        color: rgb(238, 27, 133);
+      }
+      .main-a:hover {
+        background-color: hotpink;
+        color: black;
+      }
+      #showcase {
+        background-image: url("cicek-tavsan.jpg");
+        background-position: bottom;
+        background-size: 100%;
+
+        height: 600px;
+        width: 100%;
+        padding: 10px;
+      }
+      #showcase h1 {
+        background-color: hotpink;
+        text-align: center;
+        font-size: x-large;
+      }
+
+      #how-it-works {
+        text-align: center;
+      }
+      #how-it-works p {
+        font-family: "Homemade Apple", cursive;
+        font-weight: bold;
+      }
+      #how-it-works-div {
+        padding: 10px;
+        display: inline-block;
+        width: 1000px;
+        height: 100px;
+        margin-top: 50px;
+      }
+      #how-it-works-div h2 {
+        color: blue;
+        font-size: x-large;
+      }
+
+      .box {
+        display: inline-block;
+
+        width: 30%;
+        height: min-content;
+        padding: 20px;
+        margin: 20px;
+        margin-top: 50px;
+      }
+      .box h3 {
+        color: blue;
+      }
+      .box p {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: "Homemade Apple", cursive;
+      }
+      .box i {
+        color: coral;
+      }
+      #how-about-you p {
+        font-family: "Homemade Apple", cursive;
+        font-weight: bold;
+      }
+      #how-about-you h3 {
+        color: blue;
+        font-size: x-large;
+      }
+      .box2 {
+        display: inline-block;
+        width: 749px;
+        height: 300px;
+        padding: 0px 0px;
+      }
+      #january {
+        background-image: url("cicek.jpg");
+        background-position: center;
+        background-size: 100%;
+      }
+      #february {
+        background-color: lightcyan;
+        vertical-align: top;
+        width: 50%;
+        padding: 5px;
+      }
+      #february a {
+        padding: 5px;
+
+        border: 3px solid aquamarine;
+        background-color: aquamarine;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="main-a">MovieApp</a>
+      <nav>
+        <ul>
+          <li><a href="#">Filmler</a></li>
+          <li><a href="#">Diziler</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="showcase">
+        <h1 class="font-effect-fire">Welcome to MovieApp</h1>
+      </section>
+
+      <section id="how-it-works">
+        <div id="how-it-works-div">
+          <h2 class="font-effect-shadow-multiple">How it works?</h2>
+          <p>
+            Kursumuzdaki konu başlıkları sırasıyla; Html, Css, Sass & Scss,
+            Flexbox, Javascript, Angular, Bootstrap, JQuery ve Asp.Net Core Mvc
+            konu başlıklarıdır.
+          </p>
+        </div>
+
+        <div id="container">
+          <div class="box" id="first">
+            <i class="fa-brands fa-earlybirds fa-2x"></i>
+            <h3 class="font-effect-emboss">Register</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis perferendis ullam animi modi itaque vero!
+            </p>
+          </div>
+          <div class="box" id="second">
+            <i class="fa-solid fa-mug-saucer fa-2x"></i>
+            <h3 class="font-effect-emboss">Choose a Plan</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis perferendis ullam animi modi itaque vero!
+            </p>
+          </div>
+          <div class="box" id="thirty">
+            <i class="fa-solid fa-face-grin-wink fa-2x"></i>
+            <h3 class="font-effect-emboss">Enjoy Movify</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis perferendis ullam animi modi itaque vero!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="how-about-you">
+        <div id="looking">
+          <div class="box2" id="january"></div>
+          <div class="box2" id="february">
+            <h3>Hi,My name is Melike.</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+              dolore nihil sunt aliquam quisquam amet quam laudantium vitae
+              architecto quasi, delectus nostrum placeat voluptate
+              necessitatibus ad animi dolorem ullam incidunt!
+            </p>
+            <a href="#"> <var>View Features</var></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

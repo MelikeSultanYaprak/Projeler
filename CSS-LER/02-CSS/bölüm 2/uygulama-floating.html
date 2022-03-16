@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1 {
+        margin: 0px;
+      }
+      header,
+      footer {
+        background-color: darkcyan;
+        color: black;
+        padding: 15px;
+      }
+      .col {
+        float: left;
+        padding: 15px 15px 15px 0px;
+      }
+      .menu {
+        width: 25%;
+      }
+      .menu ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: darkorange;
+      }
+      .content {
+        width: 75%;
+      }
+      .clearfix::after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+    </header>
+    <main class="clearfix">
+      <div class="menu col">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>PYTHON</li>
+        </ul>
+      </div>
+      <div class="content col">
+        <h1>Komple Web Gelişterme Eğitimi</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          tenetur quae ullam eaque illo est alias atque! Hic corrupti eius qui
+          expedita nihil! Animi facere ipsum labore veritatis nulla iusto.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem iste
+          sapiente sunt tempora eos. Nisi culpa, nesciunt labore architecto
+          ratione enim quia sapiente asperiores ea voluptates, expedita eum id.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 11</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0%;
+      }
+      .main-header {
+        background-color: cadetblue;
+        padding: 0px;
+        margin-bottom: 0%;
+      }
+      .main-nav {
+        width: calc(100% - 90px);
+
+        display: inline-block;
+        text-align: right;
+      }
+
+      li {
+        display: inline-block;
+        padding: 0px;
+        text-align: right;
+      }
+      .backround-image {
+        background: url("mercek.png");
+        background-size: 1540px 600px;
+        height: 600px;
+        width: 100%;
+        background-repeat: no-repeat;
+        padding: 10px;
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      .sections {
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 10px;
+        background-color: darkorange;
+      }
+      h1 {
+        background-color: darkcyan;
+      }
+
+      a {
+        border: 3px solid darkgoldenrod;
+        border-radius: 3px;
+      }
+      a:hover {
+        background-color: aquamarine;
+        color: chocolate;
+      }
+      li::before {
+        content: "\2757";
+        padding: 0px 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <a class="header-a" href="#">MovieApp</a>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#">Filmler</a>
+          </li>
+
+          <li>
+            <a href="#">Diziler</a>
+          </li>
+
+          <li>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="backround-image">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+
+      <section class="sections">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

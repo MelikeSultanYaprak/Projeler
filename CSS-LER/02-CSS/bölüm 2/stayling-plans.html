@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uygulama features</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,300&family=The+Nautigal&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        /*kfont-family: "Be Vietnam Pro", sans-serif;*/
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        text-align: center;
+        color: darkmagenta;
+        font-family: cursive;
+        font-weight: bold;
+      }
+      .box p {
+        /*font-family: "Be Vietnam Pro", sans-serif; */
+        text-align: center;
+        color: darkslategrey;
+        padding: 0px 20px;
+      }
+      .box h3 {
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+        font-weight: bold;
+        font-family: monospace;
+      }
+      body {
+        margin: 0%;
+      }
+
+      .main-header {
+        background-color: gold;
+      }
+
+      .main-nav {
+        text-align: right;
+        width: calc(100% - 101px);
+        display: inline-block;
+      }
+
+      #showcase {
+        background: url("makina.jpg");
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: 1536px 600px;
+        height: 600px;
+        width: 100%;
+        padding: 5px;
+      }
+      #how-it-works {
+        padding: 20px 20px;
+        text-align: center;
+      }
+      #how-it-works-div p {
+        color: darkturquoise;
+        font-weight: bold;
+        padding: 0px 100px;
+        margin-bottom: 50px;
+      }
+      h1 {
+        /*border: 5px solid black;*/
+
+        background-color: crimson;
+      }
+      nav {
+        color: darkmagenta;
+        width: 100%;
+      }
+      ul {
+        margin: 0%;
+        padding: 16px;
+      }
+      .main-nav__item {
+        display: inline-block;
+      }
+      .main-nav__item--login a {
+        color: fuchsia;
+        background-color: gainsboro;
+        padding: 2px 4px;
+        border-radius: 8px;
+        border: 2px solid deepskyblue;
+      }
+      .main-nav__item::before {
+        content: "\2753";
+      }
+      .main-nav__item--login::before {
+        content: "\2757";
+        padding: 0px 0px;
+      }
+      .main-nav__item--login:hover a {
+        color: royalblue;
+        border-color: black;
+      }
+      .box i {
+        color: mediumblue;
+      }
+      .box2 {
+        display: inline-block;
+        width: 749px;
+        height: 300px;
+        padding: 0px 0px;
+      }
+      #january {
+        background-color: aqua;
+        background-image: url("mercek.png");
+        background-size: 100%;
+
+        background-position: center;
+      }
+      #february {
+        background-color: cornflowerblue;
+        width: 50%;
+        vertical-align: top;
+        padding: 40px;
+
+        font-size: 20px;
+      }
+      #february h3 {
+        color: mediumturquoise;
+      }
+      #february p {
+        color: navajowhite;
+      }
+      #february a {
+        color: palegreen;
+
+        background-color: crimson;
+        text-decoration: none;
+        border: 2px solid aqua;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 8px;
+      }
+      #features a:hover {
+        border: 2px solid aqua;
+        color: floralwhite;
+        background-color: aqua;
+      }
+      .section-title {
+        text-align: center;
+      }
+      .plan {
+        background-color: blanchedalmond;
+        text-align: center;
+        padding: 16px;
+
+        width: 33.3%;
+        float: left;
+      }
+      .recommended-plan {
+        background: crimson !important;
+        color: blue;
+      }
+      .plan__badge {
+        padding: 8px;
+        border-radius: 5px;
+        background-color: aqua;
+      }
+      .inner-plan {
+        background-color: aqua;
+        padding: 25px 10px;
+        border-radius: 6px;
+      }
+      .plan__features {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      .plan__features li {
+        margin: 6px 0px;
+      }
+      .clearfix {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1000px;
+      }
+    </style>
+  </head>
+  <!--margin-->
+  <!--padding-->
+  <!--border-->
+  <body>
+    <header class="main-header"></header>
+    <main>
+      <section id="showcase">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+
+      <section id="how-it-works">
+        <div id="how-it-works-div">
+          <h2>How it works?</h2>
+          <p>
+            Kursumuzdaki konu başlıkları sırasıyla; Html, Css, Sass & Scss,
+            Flexbox, Javascript, Angular, Bootstrap, JQuery ve Asp.Net Core Mvc
+            konu başlıklarıdır.
+          </p>
+        </div>
+
+        <div id="container">
+          <div class="box" id="first">
+            <i class="fas fa-american-sign-language-interpreting fa-2x"></i>
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis perferendis ullam animi modi itaque vero!
+            </p>
+          </div>
+          <div class="box" id="second">
+            <i class="fab fa-buffer fa-2x"></i>
+            <h3>Choose a Plan</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis perferendis ullam animi modi itaque vero!
+            </p>
+          </div>
+          <div class="box" id="thirty">
+            <i class="fas fa-sign-out-alt fa-2x"></i>
+            <h3>Enjoy Movify</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis perferendis ullam animi modi itaque vero!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div id="looking">
+          <div class="box2" id="january"></div>
+          <div class="box2" id="february">
+            <h3>Hi,My name is Melike.</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+              dolore nihil sunt aliquam quisquam amet quam laudantium vitae
+              architecto quasi, delectus nostrum placeat voluptate
+              necessitatibus ad animi dolorem ullam incidunt!
+            </p>
+            <a href=""> <var>View Features</var></a>
+          </div>
+        </div>
+        <section id="plans">
+          <div class="row">
+            <h2 class="section-title">Become a Premium Member</h2>
+            <div class="container clearfix">
+              <div class="plan">
+                <div class="inner-plan">
+                  <h2>Free</h2>
+                  <h3>0/month</h3>
+                  <ul class="plan__features">
+                    <li>Melike</li>
+                    <li>Sultan</li>
+                    <li>Yaprak</li>
+                    <li>Miraç</li>
+                    <li>Yaprak</li>
+                  </ul>
+                  <div>
+                    <button>Choose Plan</button>
+                  </div>
+                </div>
+              </div>
+              <div class="plan">
+                <div class="inner-plan recommended-plan">
+                  <h2 class="plan__badge">Recommended</h2>
+                  <h2>Basic</h2>
+                  <h3>$19.99/month</h3>
+                  <ul class="plan__features">
+                    <li>Melike</li>
+                    <li>Sultan</li>
+                    <li>Yaprak</li>
+                    <li>Miraç</li>
+                    <li>Yaprak</li>
+                  </ul>
+                  <div>
+                    <button>Choose Plan</button>
+                  </div>
+                </div>
+              </div>
+              <div class="plan">
+                <div class="inner-plan">
+                  <h2>Premium</h2>
+                  <h3>$19.99/month</h3>
+                  <ul class="plan__features">
+                    <li>Melike</li>
+                    <li>Sultan</li>
+                    <li>Yaprak</li>
+                    <li>Miraç</li>
+                    <li>Yaprak</li>
+                  </ul>
+                  <div>
+                    <button>Choose Plan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

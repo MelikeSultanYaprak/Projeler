@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bg Image</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0%;
+      }
+
+      .main-header {
+        background-color: gold;
+      }
+
+      .main-nav {
+        text-align: right;
+        width: calc(100% - 16%);
+        display: inline-block;
+      }
+
+      #showcase {
+        background: url("makina.jpg");
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: 1536px 600px;
+        height: 600px;
+        width: 100%;
+        padding: 5px;
+      }
+      #how-it-works {
+        background-color: blue;
+        padding: 5px;
+      }
+      h1 {
+        /*border: 5px solid black;*/
+
+        background-color: crimson;
+      }
+      nav {
+        color: darkmagenta;
+        width: 100%;
+      }
+      ul {
+        margin: 0%;
+        padding: 0px;
+        list-style: none;
+      }
+      .main-nav__item {
+        display: inline-block;
+      }
+      .main-nav__item--login a {
+        color: fuchsia;
+        background-color: gainsboro;
+        padding: 2px 4px;
+        border-radius: 8px;
+        border: 2px solid deepskyblue;
+      }
+      .main-nav__item::before {
+        content: "\2753";
+      }
+      .main-nav__item--login::before {
+        content: "\2757";
+        padding: 0px 0px;
+      }
+      .main-nav__item--login:hover a {
+        color: royalblue;
+        border-color: black;
+      }
+    </style>
+  </head>
+  <!--margin-->
+  <!--padding-->
+  <!--border-->
+  <body>
+    <header class="main-header">
+      <a href="#">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Filmler</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Diziler</a>
+          </li>
+
+          <li class="main-nav__item main-nav__item--login">
+            <a href="#" class="main-nav__link">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="height: 100%">
+      <section id="showcase">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

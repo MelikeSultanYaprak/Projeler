@@ -1,0 +1,59 @@
+.btn {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 7px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+}
+
+.btn-primary {
+  background: burlywood;
+  color: rgb(0, 4, 255);
+  border: 3px solid black;
+}
+
+.btn-primary:hover {
+  background: white;
+  color: chartreuse;
+  border: 3px solid black;
+}
+
+.btn-outline-primary {
+  background: white;
+  color: chartreuse;
+  border: 3px solid black;
+}
+
+.btn-outline-primary:hover {
+  background: chartreuse;
+  color: white;
+  border: 3px solid black;
+}
+
+.btn-secondary {
+  background: burlywood;
+  color: rgb(0, 4, 255);
+  border: 3px solid black;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: chartreuse;
+  border: 3px solid black;
+}
+
+.btn-outline-secondary {
+  background: white;
+  color: chartreuse;
+  border: 3px solid black;
+}
+
+.btn-outline-secondary:hover {
+  background: chartreuse;
+  color: white;
+  border: 3px solid black;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSİTİONS (RELATİVE-ABSOLUTE-TEKRAR)</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0%;
+    }
+    .navbar {
+      padding: 10px;
+      margin-bottom: 5px;
+      text-align: left;
+      background: aquamarine;
+      border: 3px solid salmon;
+    }
+    .container {
+      margin-top: 100px;
+      position: relative;
+    }
+    .div3 {
+      position: absolute;
+      /*width: 100%;*/
+      bottom: 10px;
+      /*top: 0px;
+      right: 0px;*/
+      left: 0px;
+      margin-bottom: 0px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="div1 navbar">KUTU 1</div>
+      <div class="div2 navbar">KUTU 2</div>
+      <div class="div3 navbar">KUTU 3</div>
+    </div>
+  </body>
+</html>

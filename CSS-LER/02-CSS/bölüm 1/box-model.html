@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #showcase {
+        background-color: aqua;
+        margin: 20px;
+        padding: 10x;
+        width: 100%;
+        border: 5px solid darkmagenta;
+      }
+      #how-it-works {
+        background-color: blue;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        /*border: 5px solid black;*/
+        padding: 20px;
+        background-color: crimson;
+        border-style: solid;
+        border-width: 7px;
+        border-color: lightgreen;
+      }
+      nav {
+        border-bottom: 5px solid blue;
+        color: darkmagenta;
+        margin: 20px;
+        padding: 20px;
+      }
+      a {
+        border: 3px solid blueviolet;
+        border-radius: 8px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <!--margin-->
+  <!--padding-->
+  <!--border-->
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Contact</a>
+    </nav>
+    <main style="height: 100%">
+      <section id="showcase">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

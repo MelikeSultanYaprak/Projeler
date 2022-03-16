@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <style>
+      /* p::first-line {
+        color: palegreen;
+        letter-spacing: 2px;
+        font-weight: bold;
+        word-spacing: 5px;
+      } */
+      p.about::first-line {
+        color: palevioletred;
+      }
+      p::first-letter {
+        font-size: 40px;
+      }
+      ::selection {
+        background-color: darkseagreen;
+      }
+      p::after {
+        content: "\24C2 \2705";
+        font-size: 40px;
+        color: deepskyblue;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Pseudo elements-->
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis eligendi
+      veritatis nemo, assumenda tempore molestias deserunt nulla consectetur
+      tenetur harum amet ipsam numquam iste. Assumenda pariatur dolorum
+      repellendus corrupti laudantium.
+    </p>
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio atque
+      soluta in neque dolorum, deserunt sint magnam itaque reprehenderit
+      recusandae natus aspernatur reiciendis magni incidunt eveniet, consectetur
+      nobis repellendus rem!
+    </p>
+  </body>
+</html>
