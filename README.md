@@ -212,10 +212,7 @@ Html/Css
 
   <body>
     <header class="main-header">
-      <a class="btn btn-outline-primary" href="#" class="main-header__logo"
-        >MovieApp</a
-      >
-
+      <a class="btn btn-outline-primary" href="#" class="main-header__logo">MovieApp</a>
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
